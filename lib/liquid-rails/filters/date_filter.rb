@@ -16,4 +16,5 @@ module Liquid
   end
 end
 
-Liquid::Template.register_filter(Liquid::Rails::DateFilter)
+default_environment = Liquid::Environment.default
+default_environment.register_filter(Liquid::Rails::DateFilter)

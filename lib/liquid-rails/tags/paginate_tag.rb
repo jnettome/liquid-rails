@@ -115,4 +115,5 @@ module Liquid
   end
 end
 
-Liquid::Template.register_tag('paginate', Liquid::Rails::PaginateTag)
+default_environment = Liquid::Environment.default
+default_environment.register_tag('paginate', Liquid::Rails::PaginateTag)

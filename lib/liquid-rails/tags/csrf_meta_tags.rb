@@ -8,4 +8,5 @@ module Liquid
   end
 end
 
-Liquid::Template.register_tag('csrf_meta_tags', Liquid::Rails::CsrfMetaTags)
+default_environment = Liquid::Environment.default
+default_environment.register_tag('csrf_meta_tags', Liquid::Rails::CsrfMetaTags)

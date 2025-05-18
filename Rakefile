@@ -9,7 +9,7 @@ end
 task default: 'spec:all'
 
 namespace :spec do
-  rails_versions = %w(rails_50 rails_51 rails_52)
+  rails_versions = %w(rails_50 rails_51 rails_52 rails_70)
   rails_versions.each do |gemfile|
     desc "Run Tests against #{gemfile}"
     task gemfile do
